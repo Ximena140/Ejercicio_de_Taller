@@ -1,0 +1,245 @@
+/* SECCIÓN CONTÁCTANOS */
+.contacto {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d63384;
+}
+
+.contacto-contenido {
+  display: flex; /* Muestra el formulario y el texto lado a lado */
+  flex-direction: row;
+  gap: 3rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.formulario-contacto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.checkboxes label,
+.radios label {
+  margin-right: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #e83e8c;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e83e8c;
+}
+
+.contacto-instrucciones {
+  font-family: "PT Serif", sans-serif;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mensaje-enviado {
+  margin-top: 1.5rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .formulario-contacto,
+  .contacto-instrucciones {
+    width: 100%;
+  }
+
+  .mensaje-enviado {
+    text-align: center;
+  }
+}
+/* ===== VISIÓN Y MISIÓN ===== */
+.vision-mision {
+  padding: 50px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+.vision-mision h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d63384;
+}
+.vision-mision-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.vision,
+.mision {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.vision h3,
+.mision h3 {
+  color: #e83e8c;
+  margin-bottom: 10px;
+}
+
+/* ===== SEDES ===== */
+.sedes {
+  padding: 40px 20px;
+  background-color: #fdf2f8;
+  text-align: center;
+}
+.sedes h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #d63384;
+}
+.sedes ul {
+  list-style: none;
+  padding: 0;
+}
+.sedes li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #444;
+}
+
+/* ===== CLIENTES / RESEÑAS ===== */
+.clientes {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.clientes h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+.reseñas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.cliente {
+  background-color: #fce4ec;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cliente img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.cliente p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+.cliente small {
+  color: #777;
+  font-style: italic;
+}
+
+/* ===== SERVICIOS ===== */
+.servicios {
+  background-color: #fffafc;
+  padding: 50px 20px;
+  text-align: center;
+}
+.servicios h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+.servicios ul {
+  list-style: none;
+  padding: 0;
+}
+.servicios li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* ===== AYUDA ===== */
+.ayuda {
+  background-color: #fef1f7;
+  padding: 50px 20px;
+  text-align: center;
+}
+.ayuda h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+.ayuda p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.ayuda ol {
+  text-align: left;
+  max-width: 500px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+.ayuda ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ===== RESPONSIVE: MOBILE FRIENDLY ===== */
+@media screen and (max-width: 768px) {
+  .vision-mision-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reseñas {
+    flex-direction: column;
+  }
+}
